@@ -3,7 +3,9 @@
 The purpose of thhis repository is
 
 ## File Index
-[Main Database](https://github.com/IceeCodee/ATLDataDev/blob/main/main) --> 
+[Main Database](https://github.com/IceeCodee/ATLDataDev/blob/main/main) --> the database file (uses sqlite database) that contains three tables. 
+> [!NOTE]
+> The structure for these tables can be found in the database structure section
 
 
 [stats.json](https://github.com/IceeCodee/ATLDataDev/blob/main/stats.json) --> contains json data from the following [mlb endpoint](https://statsapi.mlb.com/api/v1/stats?stats=season&group=pitching&playerPool=all&season=2018&teamId=144) 
