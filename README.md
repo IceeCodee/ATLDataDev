@@ -4,6 +4,8 @@ The purpose of thhis repository is
 
 ## File Index
 [stats.json](https://github.com/IceeCodee/ATLDataDev/blob/main/stats.json) --> contains json data from the following [mlb endpoint](https://statsapi.mlb.com/api/v1/stats?stats=season&group=pitching&playerPool=all&season=2018&teamId=144) 
+
+
 [questions.sql.txt](https://github.com/IceeCodee/ATLDataDev/blob/main/questions.sql.txt) --> contains the sql queries that attempt to answer the following three questions:
 
 1. List all batters that had a single season WAR greater than 3 during the 2002 or 2003 seasons,
