@@ -29,16 +29,28 @@ NOT result in a strikeout? Of those plate appearances, how many passed through 0
 **War** -->
 *A table of yearly batting WAR values by player from 2000-2005 (primary key: playerID/yearID)*
 
-|Column Name| Data Type | Contraint |
-|----|-----|----|
-|playerID| TEXT| PK|
-|name| TEXT| -|
-|year|TEXT| |
-|WAR| TEXT|  |
+|Column Name| Data Type | Contraint |Description | Example| 
+|----|-----|----|---|-----|
+|playerID| TEXT| PK| |  |
+|name| TEXT| | |  |
+|year|TEXT| | |  |
+|WAR| TEXT|  | |  |
 
 **PERF** -->
 *A table of aggregated stint-level pitching performance by player (primary key:
 playerID/teamID/yearID)*
+
+|Column Name| Data Type | Contraint | Description | Example| 
+|----|-----|----|----|-----|
+|playerID| TEXT|   |  |  |
+|TeamKey|  TEXT|   | |  |
+|name| TEXT|   | |  |
+|year| TEXT|  | |  |
+|GS| TEXT|  | |  |
+|G|TEXT|   | |  |
+|WAR|  TEXT|  | |  |
+|level| TEXT|  |  |  |
+|Org| TEXT|  | |  |
 
 **PITCHBYPITCH** -->
 *A table of pitch-level data (primary key: GameKey, INNING, PA_OF_INNING, TOP_BOT ,PITCH_OF_PA) that contains 1=yes and 0=no flag columns for whether different outcomes occurred on that pitch (single, double, triple, home run, hit, out, strikeout), information about the count before the pitch (BALLS, STRIKES), and a flag column for whether that pitch was the last pitch of the plate appearance.*
@@ -47,13 +59,6 @@ playerID/teamID/yearID)*
 
 ## Conclusion
 
-
-CREATE TABLE WAR(
-  "playerID" TEXT,
-  "name" TEXT,
-  "year" TEXT,
-  "WAR" TEXT
-);
 CREATE TABLE PITCHBYPITCH(
   "GameKey" TEXT,
   "GameDate" TEXT,
@@ -75,14 +80,5 @@ CREATE TABLE PITCHBYPITCH(
   "LAST_PITCH_OF_PA" TEXT,
   "IS_STRIKEOUT" TEXT
 );
-CREATE TABLE PERF(
-  "playerID" TEXT,
-  "TeamKey" TEXT,
-  "name" TEXT,
-  "year" TEXT,
-  "GS" TEXT,
-  "G" TEXT,
-  "WAR" TEXT,
-  "level" TEXT,
-  "Org" TEXT
+
 
